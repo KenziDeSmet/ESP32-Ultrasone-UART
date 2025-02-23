@@ -4,18 +4,22 @@ This repo contains everything you need to read an ultrasonic distance sensor via
 
 Perfect for building an IoT project or just experimenting with sensors and web technology! 🚀
 
-# 🛠️ Hardware
+Need help or have a question? [open a new Discussion](https://github.com/KenziDeSmet/ESP32-Ultrasone-UART/discussions)
 
-- ESP32 ([Amazon NL](https://www.amazon.nl/dp/B0CL9VZKMT?ref=ppx_yo2ov_dt_b_fed_asin_title))
-- UART Ultrasone Sensor ([Amazon NL](https://www.amazon.nl/dp/B0DCVHBK3Q?ref=ppx_yo2ov_dt_b_fed_asin_title))
-- Jumpers ([Amazon NL](https://www.amazon.nl/gp/product/B07DK31W19/ref=ewc_pr_img_1?smid=A3SCFTIO8CSK1X&psc=1))
+![GitHub Discussions](https://img.shields.io/github/discussions/KenziDeSmet/ESP32-Ultrasone-UART)
 
-# 💻 Software
+## 🛠️ Hardware
+
+- ESP32 ([Amazon.com](https://www.amazon.com/gp/product/B0DLB3XJRT/ref=ewc_pr_img_1?smid=AA8JFJR0F3SWY&psc=1), [Amazon.nl](https://www.amazon.nl/dp/B0CL9VZKMT?ref=ppx_yo2ov_dt_b_fed_asin_title))
+- UART Ultrasone Sensor ([Amazon.com](https://www.amazon.com/gp/product/B0CFFTS71Y/ref=ewc_pr_img_1?smid=A2DCKMCEHUFVWQ&psc=1), [Amazon.nl](https://www.amazon.nl/dp/B0DCVHBK3Q?ref=ppx_yo2ov_dt_b_fed_asin_title))
+- Jumpers ([Amazon.com](https://www.amazon.com/gp/product/B09Y2T9YFK/ref=ewc_pr_img_1?smid=A2RFXKS6GNXFWP&psc=1), [Amazon.nl](https://www.amazon.nl/gp/product/B07DK31W19/ref=ewc_pr_img_1?smid=A3SCFTIO8CSK1X&psc=1))
+
+## 💻 Software
 
 - Arduino IDE ([Arduino Software](https://www.arduino.cc/en/software))
 - CP210x USB to UART Bridge VCP Drivers ([Silabs Driver](https://www.silabs.com/developer-tools/usb-to-uart-bridge-vcp-drivers?tab=downloads))
 
-# 🔗 Jumpers
+## 🔗 Jumpers
 
 GPIO Pins ESP32
 
@@ -35,7 +39,7 @@ YELLOW  -->  GND
 WHITE   -->  D16
 ```
 
-# ⚡ Quickstart
+## ⚡ Quickstart
 
 This code reads distance data via UART and displays it in the Serial Monitor.
 
@@ -65,7 +69,7 @@ void loop() {
 }
 ```
 
-# 📶 Wifi Connection
+## 📶 Wifi Connection
 
 in `ESP32_Ultrasone-UART.ino` (lines 30 and 31), you'll need to change the SSID (name of your network) and the password to work with your own WiFi network:
 
@@ -110,7 +114,7 @@ void checkWiFiConnection() {
 }
 ```
 
-# 🌐 Webserver
+## 🌐 Webserver
 
 The `handleRoot()` function creates a JSON response with the measured distance and sends it to the client via a web server. When a client requests the root page, it receives a JSON object like:
 
